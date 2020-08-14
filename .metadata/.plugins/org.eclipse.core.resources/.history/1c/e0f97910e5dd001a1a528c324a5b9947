@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>chapter5-1,2</title>
+</head>
+<body>
+	<h2>chapter5-1,2</h2>
+	<p>선언문(Declaration) : 전역변수 선언 및 메소드 선언에 사용<br>
+	스크립트릿(Scriptlet) : 프로그래밍 코드 기술에 사용<br>
+	표현식(Expression) : 화면에 출력할 내용 기술에 사용<br></p>
+
+	
+	
+	
+</body>
+</html>
