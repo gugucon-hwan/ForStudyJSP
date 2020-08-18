@@ -1,0 +1,15 @@
+
+<%@page import="java.text.SimpleDateFormat"%>
+<%@page import="java.sql.Date"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+    <%@ page errorPage="error.jsp"    	
+    %>
+    
+    <%
+    	Date date = new Date();
+    	SimpleDateFormat simpleDate= new SimpleDateFormat("yyyy-MM-dd");
+    	
+    	
+    %>
