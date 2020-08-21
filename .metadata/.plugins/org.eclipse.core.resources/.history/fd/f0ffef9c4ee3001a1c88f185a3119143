@@ -1,0 +1,7 @@
+show databases;
+
+create table member(
+	id varchar(50) not null primary key,
+	passwd varchar(16) not null,
+	
+)
