@@ -1,0 +1,8 @@
+package ch13.board;
+
+public class BoardDBBean {
+
+	private static BoardDBBean instance= new BoardDBBean();
+	//.jsp 페이지에서 DB연동빈인 BoardDBBean 클래스의 메소드에 접근시 필요
+	
+}

@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+  <%
+  	int num=Integer.parseInt(request.getParameter("num");
+  	String pageNum=request.getParameter("pageNum");
+  %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>게시판</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script>
+<!--
+	function deleteSave(){
+		if(!document.delForm.passwd.value){
+			alert("비밀번호를 입력하십시오");
+			document.delForm.passwd.focus();
+			return false;
+		}		
+}
+-->
+</script>
+</head>
+<body bgcolor="<%=bodyback_c %>">
+<p>글삭제</p>
+
+
+</body>
+</html>

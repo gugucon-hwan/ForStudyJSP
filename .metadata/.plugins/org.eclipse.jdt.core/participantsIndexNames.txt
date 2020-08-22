@@ -1,4 +1,6 @@
 INDEX VERSION 1.131
+D:\project\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1752718581.index
+\StudyBasicJSP\src
 D:\project\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2540651881.index
 \StudyBasicJSP\src
 D:\project\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\17406267.index

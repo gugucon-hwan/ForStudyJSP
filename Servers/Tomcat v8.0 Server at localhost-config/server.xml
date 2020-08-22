@@ -37,10 +37,10 @@
 			type="org.apache.catalina.UserDatabase" />
 		<Resource name="jdbc/basicjsp" auth="Container"
 			type="javax.sql.DataSource" 
-			driverClassName="com.mysql.jdbc.Driver"
+			driverClassName="com.mysql.cj.jdbc.Driver"
 			username="jspid" 
 			password="jsppass"
-			url="jdbc:mysql://localhost:3306/basicjsp" 
+			url="jdbc:mysql://localhost:3306/basicjsp?useUnicode=true&amp;characterEncoding=utf8&amp;verifyServerCertificate=false&amp;useSSL=false&amp;serverTimezone=UTC" 
 			maxWait="5000" />
 	</GlobalNamingResources>
 
@@ -120,10 +120,10 @@
 					reloadable="true" source="org.eclipse.jst.jee.server:StudyBasicJSP">
 					<Resource name="jdbc/basicjsp" auth="Container"
 						type="javax.sql.DataSource"
-						driverClassName="com.mysql.jdbc.Driver" 
+						driverClassName="com.mysql.cj.jdbc.Driver" 
 						username="jspid"
 						password="jsppass" 
-						url="jdbc:mysql://localhost:3306/basicjsp"
+						url="jdbc:mysql://localhost:3306/basicjsp?useUnicode=true&amp;characterEncoding=utf8&amp;verifyServerCertificate=false&amp;useSSL=false&amp;serverTimezone=UTC"
 						maxWait="5000" />
 				</Context>
 			</Host>

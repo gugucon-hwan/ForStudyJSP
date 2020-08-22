@@ -1,0 +1,34 @@
+package ch13.board;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.sql.DataSource;
+
+public class BoardDBBean {
+
+	private static BoardDBBean instance= new BoardDBBean();
+	//.jsp 페이지에서 DB연동빈인 BoardDBBean 클래스의 메소드에 접근시 필요
+	public static BoardDBBean getInstance() {
+		return instance;
+	}
+	
+	private BoardDBBean() {}
+	
+	//커넥션 풀로부터 Connection객체를 얻어냄
+	private Connection getConnection() throws Exception{
+		Context initCtx=new InitialContext();
+		Context envCtx=(Context)initCtx.lookup("java:com/env");
+		DataSource ds=(DataSource)envCtx.lookup("jdbc/basicjsp");
+		return ds.getConnection();
+	}
+	
+	//board테이블에 글을 추가(insert문)<=writePro.jsp페이지에서 사용
+	public void insertArticle(BoardDataBean article) throws Exception{
+		Connection conn=null;
+		PreparedStatement pstmt=null;
+		
+	}
+}
