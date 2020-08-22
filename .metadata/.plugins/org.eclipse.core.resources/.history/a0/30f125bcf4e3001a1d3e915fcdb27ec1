@@ -1,0 +1,10 @@
+package ch12.member;
+
+import java.sql.Timestamp;
+
+public class LongonDataBean {
+	private String id;
+	private String passwd;
+	private String name;
+	private Timestamp reg_date;
+}

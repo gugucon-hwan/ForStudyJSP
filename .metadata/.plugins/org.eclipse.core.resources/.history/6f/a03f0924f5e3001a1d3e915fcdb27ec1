@@ -1,0 +1,9 @@
+package ch12.member;
+
+public class LongonDBBean {
+	private static LogonDBBean instance=new LogonDBBean();
+	
+	public static LongonDBBean getInstance() {
+		return instance;
+	}
+}
