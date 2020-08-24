@@ -63,8 +63,33 @@ values('kingdora@dragon.com','1234','김제동',now());
 insert into member(id, passwd, name, reg_date)
 values('hongkd@aaa.com','1111','홍길동',now());
 
+select * from member;
+desc member;
 
+alter table member
+add address varchar(100) not null;
 
+alter table member
+add tel varchar(20) not null;
 
+update member
+set address='서울시 마포구 양화로6길9', tel='010-1111-1111'
+where id='aaaa@king.com';
 
+update member
+set address='인천시 남동구 정각로29', tel='010-2222-1234'
+where id='hongkd@aaa.com';
 
+update member
+set address='경기도 구리시 아차산로 439', tel='010-3333-3333'
+where id='kingdora@dragon.com';
+
+create table manager(
+	managerId varchar(50) not null primary key,
+	managerPasswd varchar(16) not null
+);
+
+insert into manager(managerId, managerPasswd)
+values('bookmaster@shop.com','123456');
+
+select * from manager;
