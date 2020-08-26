@@ -1,0 +1,14 @@
+package ch14.bookshop.master;
+
+public class ShopBookDBBean {
+	private static ShopBookDBBean instance = new ShopBookDBBean();
+
+	public static ShopBookDBBean getInstance() {
+		return instance;
+	}
+
+	private ShopBookDBBean() {}
+	
+	
+
+}
