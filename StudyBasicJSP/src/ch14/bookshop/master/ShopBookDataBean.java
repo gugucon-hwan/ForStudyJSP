@@ -2,24 +2,20 @@ package ch14.bookshop.master;
 
 import java.sql.Timestamp;
 
-
-/**
- * @author gugucon
- *
- */
 public class ShopBookDataBean {
-	private int book_id;//책의 등록번호
-	private String book_kind;//책의 분류
-	private String book_title;//책이름
-	private int book_price;//책가격
-	private short book_count;//책의 재고수량
-	private String author;//저자
-	private String publishing_com;//출판사
-	private String publishing_date;//출판일
-	private String book_image;//책 이미지명
-	private String book_content;//책의 내용
-	private byte discount_rate;//책의 할인율
-	private Timestamp reg_date;//책의 등록날짜
+	private int book_id; //책의 등록번호
+	private String book_kind; //책의 분류
+	private String book_title; //책이름
+	private int book_price; //책가격
+	private short book_count; //책의 재고수량
+	private String author; //저자
+	private String publishing_com; //출판사
+	private String publishing_date; //출판일
+	private String book_image; //책이미지명
+	private String book_content; //책의내용
+	private byte discount_rate; //책의 할인율
+	private Timestamp reg_date; //책의 등록날짜
+	
 	public int getBook_id() {
 		return book_id;
 	}
@@ -91,7 +87,6 @@ public class ShopBookDataBean {
 	}
 	public void setReg_date(Timestamp reg_date) {
 		this.reg_date = reg_date;
-	}
-	
-	
+	} 
+
 }

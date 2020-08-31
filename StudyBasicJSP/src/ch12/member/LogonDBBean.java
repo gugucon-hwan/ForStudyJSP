@@ -22,7 +22,7 @@ public class LogonDBBean {
 	private Connection getConnection() throws Exception {
 		Context initCtx = new InitialContext();
 		Context envCtx = (Context) initCtx.lookup("java:comp/env");
-		DataSource ds = (DataSource) envCtx.lookup("jdbc/basicjsp");
+		DataSource ds = (DataSource) envCtx.lookup("jdbc/basic.jsp");
 		return ds.getConnection();
 	}
 
